@@ -11,6 +11,7 @@ import FirebaseFirestore
 
 
 @Observable class MessageViewModel {
+    
     private(set) var messages: [MessageElement] = []
     ///
     private var lister: ListenerRegistration?

@@ -12,19 +12,19 @@ struct MessageRow: View {
     let isMyMessage: Bool
     let user: String
     let date: Date
-
+    
     var body: some View {
         HStack {
             if isMyMessage {
                 Spacer()
-
+                
                 VStack {
                     Text(message)
                         .padding(8)
                         .background(Color.red)
                         .cornerRadius(6)
                         .foregroundColor(Color.white)
-                    Text(date.text)
+                    Text(self.formattedDate(date: date))
                         .font(.callout)
                 }
             } else {
@@ -34,17 +34,24 @@ struct MessageRow: View {
                         .background(Color.green)
                         .cornerRadius(6)
                         .foregroundColor(Color.white)
-
+                    
                     HStack {
                         Text(user)
-
-                        Text(date.text)
+                        
+                        Text(self.formattedDate(date: date))
                             .font(.callout)
                     }
                 }
-
+                
                 Spacer()
             }
         }
+    }
+    // 日付をフォーマットする関数
+    func formattedDate(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter.string(from: date)
     }
 }
