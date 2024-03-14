@@ -9,41 +9,46 @@ import SwiftUI
 
 struct ArticleListView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                EventButton()
-                ScrollView {
-                    CardView()
-                    CardView()
-                    CardView()
-                }
-            }
-                .toolbar {
-                    ToolbarItem(placement: .principal){
-                        Text("記事一覧")
+        ZStack {
+            NavigationView {
+                VStack {
+                    EventButton()
+                    ScrollView {
+                        CardView()
+                        CardView()
+                        CardView()
                     }
-                    ToolbarItem {
-                        Menu {
-                            Button {
+                }
+                    .toolbar {
+                        ToolbarItem(placement: .principal){
+                            Text("記事一覧")
+                        }
+                        ToolbarItem {
+                            Menu {
+                                Button {
 
-                            } label: {
-                                Label("ユーザー編集", systemImage: "heart.fill")
-                            }
-                            Button {
+                                } label: {
+                                    Label("ユーザー編集", systemImage: "heart.fill")
+                                }
+                                Button {
 
-                            } label: {
-                                Label("クーポン使用", systemImage: "heart.fill")
-                            }
-                            Button {
+                                } label: {
+                                    Label("クーポン使用", systemImage: "heart.fill")
+                                }
+                                Button {
 
+                                } label: {
+                                    Label("ログアウト", systemImage: "heart.fill")
+                                }
                             } label: {
-                                Label("ログアウト", systemImage: "heart.fill")
+                                Label("メニュー", systemImage: "ellipsis.circle")
                             }
-                        } label: {
-                            Label("メニュー", systemImage: "ellipsis.circle")
                         }
                     }
-                }
+            }
+            //ハーフモーダルへとぶ
+            EditButton()
+                .offset(x: 130, y:350)
         }
     }
 }
