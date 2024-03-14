@@ -4,6 +4,7 @@
 //
 //  Created by 櫻井絵理香 on 2024/03/14.
 //
+//Chatの画面
 
 import SwiftUI
 

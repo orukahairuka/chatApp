@@ -4,15 +4,47 @@
 //
 //  Created by 櫻井絵理香 on 2024/03/14.
 //
-
+//Chatの吹き出しUI
 import SwiftUI
 
 struct MessageRow: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    let message: String
+    let isMyMessage: Bool
+    let user: String
+    let date: Date
 
-#Preview {
-    MessageRow()
+    var body: some View {
+        HStack {
+            if isMyMessage {
+                Spacer()
+
+                VStack {
+                    Text(message)
+                        .padding(8)
+                        .background(Color.red)
+                        .cornerRadius(6)
+                        .foregroundColor(Color.white)
+                    Text(date.text)
+                        .font(.callout)
+                }
+            } else {
+                VStack(alignment: .leading) {
+                    Text(message)
+                        .padding(8)
+                        .background(Color.green)
+                        .cornerRadius(6)
+                        .foregroundColor(Color.white)
+
+                    HStack {
+                        Text(user)
+
+                        Text(date.text)
+                            .font(.callout)
+                    }
+                }
+
+                Spacer()
+            }
+        }
+    }
 }
