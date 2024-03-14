@@ -40,7 +40,6 @@ struct CardView: View {
             
         }
         .padding()
-        .background(Color(white: 0.9))
     }
 }
 

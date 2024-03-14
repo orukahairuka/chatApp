@@ -10,26 +10,38 @@ import SwiftUI
 struct ArticleListView: View {
     var body: some View {
         NavigationView {
-            Text("aaaaa")
+            VStack {
+                EventButton()
+                ScrollView {
+                    CardView()
+                    CardView()
+                    CardView()
+                }
+            }
                 .toolbar {
-                    Menu {
-                        Button {
+                    ToolbarItem(placement: .principal){
+                        Text("記事一覧")
+                    }
+                    ToolbarItem {
+                        Menu {
+                            Button {
 
-                        } label: {
-                            Label("ユーザー編集", systemImage: "heart.fill")
-                        }
-                        Button {
+                            } label: {
+                                Label("ユーザー編集", systemImage: "heart.fill")
+                            }
+                            Button {
 
-                        } label: {
-                            Label("クーポン使用", systemImage: "heart.fill")
-                        }
-                        Button {
+                            } label: {
+                                Label("クーポン使用", systemImage: "heart.fill")
+                            }
+                            Button {
 
+                            } label: {
+                                Label("ログアウト", systemImage: "heart.fill")
+                            }
                         } label: {
-                            Label("ログアウト", systemImage: "heart.fill")
+                            Label("メニュー", systemImage: "ellipsis.circle")
                         }
-                    } label: {
-                        Label("メニュー", systemImage: "ellipsis.circle")
                     }
                 }
         }
