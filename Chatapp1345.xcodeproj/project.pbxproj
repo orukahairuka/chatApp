@@ -45,9 +45,6 @@
 		3B95ECFB2BA298F1007999FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ECFA2BA298F1007999FB /* ContentView.swift */; };
 		3B95ED012BA3041A007999FB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED002BA3041A007999FB /* ImagePicker.swift */; };
 		3B95ED032BA3049C007999FB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED022BA3049C007999FB /* ImageView.swift */; };
-		3B95ED052BA30B7A007999FB /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED042BA30B7A007999FB /* EditView.swift */; };
-		3B95ED072BA30D07007999FB /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED062BA30D07007999FB /* ArticleListView.swift */; };
-		3B95ED092BA30D15007999FB /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED082BA30D15007999FB /* EventListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,9 +60,6 @@
 		3B95ECFA2BA298F1007999FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B95ED002BA3041A007999FB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3B95ED022BA3049C007999FB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		3B95ED042BA30B7A007999FB /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
-		3B95ED062BA30D07007999FB /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
-		3B95ED082BA30D15007999FB /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +122,6 @@
 				3B95ECAB2BA28F47007999FB /* Chatapp1345App.swift */,
 				3B95ECFA2BA298F1007999FB /* ContentView.swift */,
 				3B95ED002BA3041A007999FB /* ImagePicker.swift */,
-				3B95ED042BA30B7A007999FB /* EditView.swift */,
-				3B95ED062BA30D07007999FB /* ArticleListView.swift */,
-				3B95ED082BA30D15007999FB /* EventListView.swift */,
 				3B95ED022BA3049C007999FB /* ImageView.swift */,
 				3B95ECF02BA29115007999FB /* MessageView.swift */,
 				3B95ECF22BA29129007999FB /* MessageRow.swift */,
@@ -254,14 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B95ED092BA30D15007999FB /* EventListView.swift in Sources */,
 				3B95ED032BA3049C007999FB /* ImageView.swift in Sources */,
-				3B95ED072BA30D07007999FB /* ArticleListView.swift in Sources */,
 				3B95ECF32BA29129007999FB /* MessageRow.swift in Sources */,
 				3B95ECF12BA29115007999FB /* MessageView.swift in Sources */,
 				3B95ECFB2BA298F1007999FB /* ContentView.swift in Sources */,
 				3B95ED012BA3041A007999FB /* ImagePicker.swift in Sources */,
-				3B95ED052BA30B7A007999FB /* EditView.swift in Sources */,
 				3B95ECF72BA291BF007999FB /* MessageElement.swift in Sources */,
 				3B95ECF52BA2913E007999FB /* MessageViewModel.swift in Sources */,
 				3B95ECAC2BA28F47007999FB /* Chatapp1345App.swift in Sources */,
