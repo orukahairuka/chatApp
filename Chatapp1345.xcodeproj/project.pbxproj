@@ -43,6 +43,8 @@
 		3B95ECF72BA291BF007999FB /* MessageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ECF62BA291BF007999FB /* MessageElement.swift */; };
 		3B95ECF92BA29747007999FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B95ECF82BA29747007999FB /* GoogleService-Info.plist */; };
 		3B95ECFB2BA298F1007999FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ECFA2BA298F1007999FB /* ContentView.swift */; };
+		3B95ED012BA3041A007999FB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED002BA3041A007999FB /* ImagePicker.swift */; };
+		3B95ED032BA3049C007999FB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED022BA3049C007999FB /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		3B95ECF62BA291BF007999FB /* MessageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageElement.swift; sourceTree = "<group>"; };
 		3B95ECF82BA29747007999FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B95ECFA2BA298F1007999FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B95ED002BA3041A007999FB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3B95ED022BA3049C007999FB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 			children = (
 				3B95ECAB2BA28F47007999FB /* Chatapp1345App.swift */,
 				3B95ECFA2BA298F1007999FB /* ContentView.swift */,
+				3B95ED002BA3041A007999FB /* ImagePicker.swift */,
+				3B95ED022BA3049C007999FB /* ImageView.swift */,
 				3B95ECF02BA29115007999FB /* MessageView.swift */,
 				3B95ECF22BA29129007999FB /* MessageRow.swift */,
 				3B95ECF82BA29747007999FB /* GoogleService-Info.plist */,
@@ -239,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B95ED032BA3049C007999FB /* ImageView.swift in Sources */,
 				3B95ECF32BA29129007999FB /* MessageRow.swift in Sources */,
 				3B95ECF12BA29115007999FB /* MessageView.swift in Sources */,
 				3B95ECFB2BA298F1007999FB /* ContentView.swift in Sources */,
+				3B95ED012BA3041A007999FB /* ImagePicker.swift in Sources */,
 				3B95ECF72BA291BF007999FB /* MessageElement.swift in Sources */,
 				3B95ECF52BA2913E007999FB /* MessageViewModel.swift in Sources */,
 				3B95ECAC2BA28F47007999FB /* Chatapp1345App.swift in Sources */,
@@ -381,6 +389,7 @@
 				DEVELOPMENT_TEAM = 922N7TF68N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラへのアクセスを許可しますか？";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -410,6 +419,7 @@
 				DEVELOPMENT_TEAM = 922N7TF68N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラへのアクセスを許可しますか？";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
