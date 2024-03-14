@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+
+
+struct MessageElement: Codable {//jsonからswiftへ
+    @DocumentID var id: String?
+    var name: String
+    var message: String
+    var createAt: Date
+}

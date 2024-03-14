@@ -4,21 +4,50 @@
 //
 //  Created by 櫻井絵理香 on 2024/03/14.
 //
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
 
-#Preview {
-    ContentView()
+    @State var name = ""
+
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color.orange
+
+                VStack {
+                    Image(systemName: "person.circle.fill")
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                        .padding(.top, 12)
+
+                    TextField("Name ", text: $name)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+
+                    if name != "" {
+                        NavigationLink(destination: MessageView(name: name)) {
+                            HStack {
+                                Text("Join")
+                                Image(systemName: "arrow.right.circle.fill")
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                            }
+
+                        }
+                        .frame(width: 100, height: 54)
+                        .background(Color.orange)
+                        .foregroundColor(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 27))
+                        .padding(.bottom, 15)
+                    }
+                }
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .padding()
+            }
+            .edgesIgnoringSafeArea(.all)
+        }
+        .animation(.default, value: name != "")
+    }
 }
