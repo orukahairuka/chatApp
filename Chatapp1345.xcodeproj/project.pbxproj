@@ -43,6 +43,11 @@
 		3B95ECF72BA291BF007999FB /* MessageElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ECF62BA291BF007999FB /* MessageElement.swift */; };
 		3B95ECF92BA29747007999FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B95ECF82BA29747007999FB /* GoogleService-Info.plist */; };
 		3B95ECFB2BA298F1007999FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ECFA2BA298F1007999FB /* ContentView.swift */; };
+		D21C91A62BA2B4E600D43CC1 /* LoginAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C91A52BA2B4E600D43CC1 /* LoginAuthView.swift */; };
+		D21C91A82BA2D8D900D43CC1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C91A72BA2D8D900D43CC1 /* ColorExtension.swift */; };
+		D21C91AC2BA3AC4600D43CC1 /* UserTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C91AB2BA3AC4600D43CC1 /* UserTypeSelectionView.swift */; };
+		D21C91AE2BA3AC7C00D43CC1 /* UserRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C91AD2BA3AC7C00D43CC1 /* UserRegistrationView.swift */; };
+		D21C91B02BA3B55800D43CC1 /* CorporateRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21C91AF2BA3B55800D43CC1 /* CorporateRegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		3B95ECF62BA291BF007999FB /* MessageElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageElement.swift; sourceTree = "<group>"; };
 		3B95ECF82BA29747007999FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B95ECFA2BA298F1007999FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D21C91A52BA2B4E600D43CC1 /* LoginAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthView.swift; sourceTree = "<group>"; };
+		D21C91A72BA2D8D900D43CC1 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		D21C91AB2BA3AC4600D43CC1 /* UserTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionView.swift; sourceTree = "<group>"; };
+		D21C91AD2BA3AC7C00D43CC1 /* UserRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationView.swift; sourceTree = "<group>"; };
+		D21C91AF2BA3B55800D43CC1 /* CorporateRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorporateRegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				3B95ECAB2BA28F47007999FB /* Chatapp1345App.swift */,
+				D21C91A52BA2B4E600D43CC1 /* LoginAuthView.swift */,
+				D21C91AB2BA3AC4600D43CC1 /* UserTypeSelectionView.swift */,
+				D21C91AF2BA3B55800D43CC1 /* CorporateRegistrationView.swift */,
+				D21C91AD2BA3AC7C00D43CC1 /* UserRegistrationView.swift */,
 				3B95ECFA2BA298F1007999FB /* ContentView.swift */,
 				3B95ECF02BA29115007999FB /* MessageView.swift */,
 				3B95ECF22BA29129007999FB /* MessageRow.swift */,
@@ -123,6 +137,7 @@
 				3B95ECF42BA2913E007999FB /* MessageViewModel.swift */,
 				3B95ECF62BA291BF007999FB /* MessageElement.swift */,
 				3B95ECAF2BA28F48007999FB /* Assets.xcassets */,
+				D21C91A72BA2D8D900D43CC1 /* ColorExtension.swift */,
 				3B95ECB12BA28F48007999FB /* Preview Content */,
 			);
 			path = Chatapp1345;
@@ -240,9 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B95ECF32BA29129007999FB /* MessageRow.swift in Sources */,
+				D21C91AE2BA3AC7C00D43CC1 /* UserRegistrationView.swift in Sources */,
 				3B95ECF12BA29115007999FB /* MessageView.swift in Sources */,
+				D21C91B02BA3B55800D43CC1 /* CorporateRegistrationView.swift in Sources */,
 				3B95ECFB2BA298F1007999FB /* ContentView.swift in Sources */,
+				D21C91A82BA2D8D900D43CC1 /* ColorExtension.swift in Sources */,
 				3B95ECF72BA291BF007999FB /* MessageElement.swift in Sources */,
+				D21C91AC2BA3AC4600D43CC1 /* UserTypeSelectionView.swift in Sources */,
+				D21C91A62BA2B4E600D43CC1 /* LoginAuthView.swift in Sources */,
 				3B95ECF52BA2913E007999FB /* MessageViewModel.swift in Sources */,
 				3B95ECAC2BA28F47007999FB /* Chatapp1345App.swift in Sources */,
 			);
