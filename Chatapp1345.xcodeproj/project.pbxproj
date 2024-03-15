@@ -51,6 +51,8 @@
 		3B95ED032BA3049C007999FB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95ED022BA3049C007999FB /* ImageView.swift */; };
 		3B9D96FE2BA4696B00677B01 /* EventCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D96FD2BA4696B00677B01 /* EventCellView.swift */; };
 		3B9D97002BA46C1000677B01 /* ProfEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D96FF2BA46C1000677B01 /* ProfEditView.swift */; };
+		3B9D97022BA46F5700677B01 /* ComProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D97012BA46F5700677B01 /* ComProfileView.swift */; };
+		3B9D97042BA46F6A00677B01 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D97032BA46F6A00677B01 /* UserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		3B95ED022BA3049C007999FB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		3B9D96FD2BA4696B00677B01 /* EventCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellView.swift; sourceTree = "<group>"; };
 		3B9D96FF2BA46C1000677B01 /* ProfEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfEditView.swift; sourceTree = "<group>"; };
+		3B9D97012BA46F5700677B01 /* ComProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComProfileView.swift; sourceTree = "<group>"; };
+		3B9D97032BA46F6A00677B01 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 				3B3546432BA3215E0008D1F0 /* CardView.swift */,
 				3B3546452BA32D930008D1F0 /* EditView.swift */,
 				3B9D96FF2BA46C1000677B01 /* ProfEditView.swift */,
+				3B9D97012BA46F5700677B01 /* ComProfileView.swift */,
+				3B9D97032BA46F6A00677B01 /* UserProfileView.swift */,
 				3B3546422BA318F80008D1F0 /* Image */,
 				3B3546412BA318E30008D1F0 /* Message */,
 				3B95ECF82BA29747007999FB /* GoogleService-Info.plist */,
@@ -290,6 +296,8 @@
 				3B95ED012BA3041A007999FB /* ImagePicker.swift in Sources */,
 				3B3546482BA3422F0008D1F0 /* EventListView.swift in Sources */,
 				3B95ECF72BA291BF007999FB /* MessageElement.swift in Sources */,
+				3B9D97042BA46F6A00677B01 /* UserProfileView.swift in Sources */,
+				3B9D97022BA46F5700677B01 /* ComProfileView.swift in Sources */,
 				3B95ECF52BA2913E007999FB /* MessageViewModel.swift in Sources */,
 				3B3546402BA318DA0008D1F0 /* ArticleListView.swift in Sources */,
 				3B95ECAC2BA28F47007999FB /* Chatapp1345App.swift in Sources */,
