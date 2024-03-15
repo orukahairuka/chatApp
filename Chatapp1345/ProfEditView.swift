@@ -1,4 +1,10 @@
 //
+//  ComProfEditView.swift
+//  Chatapp1345
+//
+//  Created by 櫻井絵理香 on 2024/03/15.
+//
+//
 //  EditView.swift
 //  Chatapp1345
 //
@@ -8,19 +14,19 @@
 import SwiftUI
 
 //モーダルのテスト用View
-struct ModalTestView: View {
+struct SecondModalTestView: View {
     @State var isShowSheet = false
     var body: some View {
         Button("シートを表示") {
             isShowSheet.toggle()
         }
         .sheet(isPresented: $isShowSheet){
-            EditView()
+            ProfEditView()
         }
     }
 }
 
-struct EditView: View {
+struct ProfEditView: View {
     @State var inputTitle = ""
     @State var inputDetail = ""
     var body: some View {
@@ -28,12 +34,18 @@ struct EditView: View {
             Button {
 
             } label: {
-                Text("投稿する")
+                Text("変更する")
             }
-            TextField("タイトル", text: $inputTitle)
-                .textFieldStyle(.roundedBorder)
-                .frame(width: 355,height: 40)
-                .padding(.all)
+            .frame(width: 120,height: 70)
+            .background(Color.orange)
+            .cornerRadius(30)
+            .shadow(color: .gray, radius: 3, x: 3, y: 3)
+            .border(.black)
+            .padding(.bottom)
+            HStack {
+                Text("自己紹介記入欄")
+                Spacer()
+            }
             TextEditor(text: $inputDetail)
                 .frame(width: 355,height: 380)
                 .overlay(
@@ -44,5 +56,5 @@ struct EditView: View {
 }
 
 #Preview {
-    ModalTestView()
+    SecondModalTestView()
 }
