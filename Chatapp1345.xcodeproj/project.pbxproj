@@ -131,8 +131,6 @@
 				D21C91AF2BA3B55800D43CC1 /* CorporateRegistrationView.swift */,
 				D21C91AD2BA3AC7C00D43CC1 /* UserRegistrationView.swift */,
 				3B95ECFA2BA298F1007999FB /* ContentView.swift */,
-				3B95ED002BA3041A007999FB /* ImagePicker.swift */,
-				3B95ED022BA3049C007999FB /* ImageView.swift */,
 				3B95ECF02BA29115007999FB /* MessageView.swift */,
 				3B95ECF22BA29129007999FB /* MessageRow.swift */,
 				3B95ECF82BA29747007999FB /* GoogleService-Info.plist */,
@@ -256,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B95ED032BA3049C007999FB /* ImageView.swift in Sources */,
 				3B95ECF32BA29129007999FB /* MessageRow.swift in Sources */,
 				D21C91AE2BA3AC7C00D43CC1 /* UserRegistrationView.swift in Sources */,
 				3B95ECF12BA29115007999FB /* MessageView.swift in Sources */,
