@@ -13,6 +13,9 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 
+# Swift Package Manager
+**/*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
 .DS_Store
 *.xcuserdatad
 
