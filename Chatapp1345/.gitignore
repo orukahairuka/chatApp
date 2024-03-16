@@ -13,8 +13,19 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 
+# Swift Package Manager
+**/*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+# macOSの.DS_Storeファイルを無視
 .DS_Store
-*.xcuserdatad
+
+# Xcodeのユーザー固有設定を無視
+Chatapp1345.xcodeproj/project.xcworkspace/xcuserdata/
+Chatapp1345.xcodeproj/xcuserdata/
+
+# またはより一般的に全てのxcuserdataを無視する
+**/xcuserdata/
+
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 build/
