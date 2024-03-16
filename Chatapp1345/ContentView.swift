@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ChatView: View {
 
     @State var name = ""
 
@@ -46,8 +46,4 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
