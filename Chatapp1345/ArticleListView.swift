@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ArticleListView: View {
     var body: some View {
-        ZStack {
-            NavigationView {
+        
+        NavigationView {
+            ZStack {
                 VStack {
                     EventButton()
                     ScrollView {
@@ -19,72 +20,75 @@ struct ArticleListView: View {
                         CardView()
                     }
                 }
-                    .toolbar {
-                        ToolbarItem(placement: .principal){
-                            Text("記事一覧")
-                        }
-                        ToolbarItem {
-                            Menu {
-                                Button {
-
-                                } label: {
-                                    Label("ユーザー編集", systemImage: "heart.fill")
-                                }
-                                Button {
-
-                                } label: {
-                                    Label("クーポン使用", systemImage: "heart.fill")
-                                }
-                                Button {
-
-                                } label: {
-                                    Label("ログアウト", systemImage: "heart.fill")
-                                }
+                .toolbar {
+                    ToolbarItem(placement: .principal){
+                        Text("記事一覧")
+                    }
+                    ToolbarItem {
+                        Menu {
+                            Button {
+                                
                             } label: {
-                                Label("メニュー", systemImage: "ellipsis.circle")
+                                Label("ユーザー編集", systemImage: "heart.fill")
                             }
+                            Button {
+                                
+                            } label: {
+                                Label("クーポン使用", systemImage: "heart.fill")
+                            }
+                            Button {
+                                
+                            } label: {
+                                Label("ログアウト", systemImage: "heart.fill")
+                            }
+                        } label: {
+                            Label("メニュー", systemImage: "ellipsis.circle")
                         }
                     }
+                }
+                //ハーフモーダルへとぶ
+                EditButton()
+                    .offset(x: 130, y:350)
             }
-            //ハーフモーダルへとぶ
-            EditButton()
-                .offset(x: 130, y:350)
         }
     }
 }
 
 struct EventButton: View {
     var body: some View {
-        Button {
-            print("イベント一覧のページへ")
-        } label: {
-            Label("編集する",systemImage: "heart.fill")
+        NavigationLink(destination: EventListView()) {
+            Label("イベントへ", systemImage: "heart.fill")
+                .frame(width: 120, height: 60)
+                .background(Color.orange)
+                .cornerRadius(30)
+                .shadow(color: .gray, radius: 3, x: 3, y: 3)
+                .border(Color.black)
         }
-        .frame(width: 120,height: 60)
-        .background(Color.orange)
-        .cornerRadius(30)
-        .shadow(color: .gray, radius: 3, x: 3, y: 3)
-        .border(.black)
     }
 }
 
 
 struct EditButton: View {
+    @State var isShowSheet = false
     var body: some View {
         Button {
-
+            isShowSheet.toggle()
         } label: {
             Image(systemName: "heart.fill")
+        }
+        .sheet(isPresented: $isShowSheet){
+            EditView()
         }
         .frame(width: 60,height: 60)
         .background(Color.orange)
         .cornerRadius(30)
         .shadow(color: .gray, radius: 3, x: 3, y: 3)
         .border(.black)
+        
     }
 }
 
 
 #Preview {
-     ArticleListView()
+    ArticleListView()
 }

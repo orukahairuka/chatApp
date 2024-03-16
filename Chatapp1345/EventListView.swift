@@ -9,39 +9,35 @@ import SwiftUI
 
 struct EventListView: View {
     var body: some View {
-
-        NavigationView {
-            VStack {
-                EventButton()
-                ScrollView {
-                    EventCellView()
-                    EventCellView()
-                    EventCellView()
+        VStack {
+            ScrollView {
+                EventCellView()
+                EventCellView()
+                EventCellView()
+            }
+            .toolbar {
+                ToolbarItem(placement: .principal){
+                    Text("イベント一覧")
                 }
-                .toolbar {
-                    ToolbarItem(placement: .principal){
-                        Text("イベント一覧")
-                    }
-                    ToolbarItem {
-                        Menu {
-                            Button {
+                ToolbarItem {
+                    Menu {
+                        Button {
 
-                            } label: {
-                                Label("ユーザー編集", systemImage: "heart.fill")
-                            }
-                            Button {
-
-                            } label: {
-                                Label("クーポン使用", systemImage: "heart.fill")
-                            }
-                            Button {
-
-                            } label: {
-                                Label("ログアウト", systemImage: "heart.fill")
-                            }
                         } label: {
-                            Label("メニュー", systemImage: "ellipsis.circle")
+                            Label("ユーザー編集", systemImage: "heart.fill")
                         }
+                        Button {
+
+                        } label: {
+                            Label("クーポン使用", systemImage: "heart.fill")
+                        }
+                        Button {
+
+                        } label: {
+                            Label("ログアウト", systemImage: "heart.fill")
+                        }
+                    } label: {
+                        Label("メニュー", systemImage: "ellipsis.circle")
                     }
                 }
             }
@@ -51,20 +47,18 @@ struct EventListView: View {
 
 struct ArticleButton: View {
     var body: some View {
-        Button {
-            print("記事一覧のページへ")
-        } label: {
+        NavigationLink(destination: ArticleListView()){
             Label("記事へ",systemImage: "heart.fill")
+                .frame(width: 120,height: 60)
+                .background(Color.orange)
+                .cornerRadius(30)
+                .shadow(color: .gray, radius: 3, x: 3, y: 3)
+                .border(.black)
         }
-        .frame(width: 120,height: 60)
-        .background(Color.orange)
-        .cornerRadius(30)
-        .shadow(color: .gray, radius: 3, x: 3, y: 3)
-        .border(.black)
     }
 }
 
-    #Preview {
-        EventListView()
-    }
+#Preview {
+    EventListView()
+}
 
