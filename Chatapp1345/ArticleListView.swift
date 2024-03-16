@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ArticleListView: View {
+    @State var isEditSheet = false
     var body: some View {
-        
+
         NavigationView {
             ZStack {
                 VStack {
@@ -27,17 +28,17 @@ struct ArticleListView: View {
                     ToolbarItem {
                         Menu {
                             Button {
-                                
+                                isEditSheet.toggle()
                             } label: {
                                 Label("ユーザー編集", systemImage: "heart.fill")
                             }
                             Button {
-                                
+                                //クーポンのトグルで、下に.sheetする
                             } label: {
                                 Label("クーポン使用", systemImage: "heart.fill")
                             }
                             Button {
-                                
+
                             } label: {
                                 Label("ログアウト", systemImage: "heart.fill")
                             }
@@ -48,8 +49,11 @@ struct ArticleListView: View {
                 }
                 //ハーフモーダルへとぶ
                 EditButton()
-                    .offset(x: 130, y:350)
+                    .offset(x: 130, y:300)
             }
+        }
+        .sheet(isPresented: $isEditSheet) {
+            ProfEditView() // EditViewをモーダルとして表示
         }
     }
 }
@@ -84,7 +88,7 @@ struct EditButton: View {
         .cornerRadius(30)
         .shadow(color: .gray, radius: 3, x: 3, y: 3)
         .border(.black)
-        
+
     }
 }
 
